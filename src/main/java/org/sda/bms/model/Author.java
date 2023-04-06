@@ -6,8 +6,8 @@ import java.util.List;
 @Entity
 @Table(name = "author")
 public class Author {
-    @Id //fk
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto-increment
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
     @Column(name = "first_name")

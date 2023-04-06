@@ -1,4 +1,4 @@
-package org.sda.bms.repository;
+package org.sda.bms.utils.repository;
 
 import java.util.List;
 import java.util.Optional;

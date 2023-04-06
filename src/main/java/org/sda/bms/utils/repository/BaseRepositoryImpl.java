@@ -1,12 +1,12 @@
-package org.sda.bms.repository;
+package org.sda.bms.utils.repository;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-import org.sda.bms.repository.exception.EntityCreationFailedException;
-import org.sda.bms.repository.exception.EntityDeletionFailedException;
-import org.sda.bms.repository.exception.EntityFetchingFailedException;
-import org.sda.bms.repository.exception.EntityUpdateFailedException;
+import org.sda.bms.utils.repository.exception.EntityCreationFailedException;
+import org.sda.bms.utils.repository.exception.EntityDeletionFailedException;
+import org.sda.bms.utils.repository.exception.EntityFetchingFailedException;
+import org.sda.bms.utils.repository.exception.EntityUpdateFailedException;
 import org.sda.bms.utils.SessionManager;
 
 import java.util.List;

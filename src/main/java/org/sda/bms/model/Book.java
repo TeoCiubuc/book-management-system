@@ -4,10 +4,10 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Book")
+@Table(name = "book")
 public class Book {
-    @Id //fk
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto-increment
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
     @Column(name = "title")

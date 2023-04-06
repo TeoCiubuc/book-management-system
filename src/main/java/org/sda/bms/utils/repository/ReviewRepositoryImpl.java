@@ -1,4 +1,4 @@
-package org.sda.bms.repository;
+package org.sda.bms.utils.repository;
 
 import org.sda.bms.model.Review;
 

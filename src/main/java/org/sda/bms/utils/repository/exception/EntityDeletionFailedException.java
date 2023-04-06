@@ -1,4 +1,4 @@
-package org.sda.bms.repository.exception;
+package org.sda.bms.utils.repository.exception;
 
 public class EntityDeletionFailedException extends RuntimeException{
     public EntityDeletionFailedException(String message) {

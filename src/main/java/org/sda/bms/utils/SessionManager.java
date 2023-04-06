@@ -1,6 +1,5 @@
 package org.sda.bms.utils;
 
-import net.bytebuddy.build.Plugin;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.sda.bms.model.Author;
@@ -11,7 +10,7 @@ public class SessionManager extends AbstractSessionManager {
     private static final SessionManager INSTANCE = new SessionManager();
 
     private SessionManager() {
-        // hide default constructor
+        // hide the default constructor
     }
 
     public static SessionFactory getSessionFactory() {
@@ -24,9 +23,9 @@ public class SessionManager extends AbstractSessionManager {
 
     @Override
     protected void setAnnotatedClasses(Configuration configuration) {
-        //do not forget to add the model here
+        // do not forget to add the model here
         configuration.addAnnotatedClass(Author.class);
         configuration.addAnnotatedClass(Book.class);
-        configuration.addAnnotatedClass((Review.class));
+        configuration.addAnnotatedClass(Review.class);
     }
 }

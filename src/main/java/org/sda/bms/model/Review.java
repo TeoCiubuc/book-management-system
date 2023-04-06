@@ -1,13 +1,12 @@
 package org.sda.bms.model;
 
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
 
 @Entity
-@Table(name = "Review")
+@Table(name = "review")
 public class Review {
-    @Id //fk
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto-increment
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
     @Column(name = "score")
@@ -17,6 +16,7 @@ public class Review {
     @ManyToOne
     @JoinColumn(name = "book_id")
     private Book book;
+
     public Review() {
     }
 
